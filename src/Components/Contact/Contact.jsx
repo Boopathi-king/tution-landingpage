@@ -17,7 +17,7 @@ const Contact = () => {
 
       // ------Enter your web3forms access key below-------
       
-      formData.append("access_key", "-----Enter your web3forms key----");
+      formData.append("access_key", "e5bc1613-8da6-4ced-9676-266817221971");
   
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -41,9 +41,9 @@ const Contact = () => {
         <h3>Send us a message <img src={msg_icon} alt="" /></h3>
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
         <ul>
-            <li><img src={mail_icon} alt="" />Contact@GreatStack.dev</li>
-            <li><img src={phone_icon} alt="" />+1 123-456-7890</li>
-            <li><img src={location_icon} alt="" />77 Massachusetts Ave, Cambridge<br/> MA 02139, United States</li>
+            <li><img src={mail_icon} alt="" />aasthatutioncenter@gmail.com</li>
+            <li><img src={phone_icon} alt="" />+91 9952544279</li>
+            <li><img src={location_icon} alt="" />3/174, Eswaran kovil street,<br/>Perumanallur, Tiruppur-641666</li>
         </ul>
       </div>
       <div className="contact-col">
@@ -52,6 +52,10 @@ const Contact = () => {
             <input type="text" name='name' placeholder='Enter your name' required/>
             <label>Phone Number</label>
             <input type="tel" name='phone' placeholder='Enter your mobile number' required/>
+            <label>School name</label>
+            <input type="text" name='school' placeholder='Enter your school name' required/>
+            <label>Class</label>
+            <input type="text" name='class' placeholder='Enter your class' required/>
             <label>Write your messages here</label>
             <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
             <button type='submit' className='btn dark-btn'>Submit now <img src={white_arrow} alt="" /></button>
